@@ -15,6 +15,10 @@ getgenv().syn.exec = function(data)
         Url = url,
         Headers = headers
     })
+    if not req.Body then
+        warn('syn.exec will not work until the Server is launched.')
+        return false
+    end
     return game:GetService('HttpService'):JSONDecode(req.Body)
 end
 setreadonly(getgenv().syn, true)
