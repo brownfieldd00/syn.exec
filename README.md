@@ -7,6 +7,7 @@ This function takes a string as input (the command to be executed) and returns:
     "stderr": null
 }
 ```
+(node-cmd is used to execute commands. See the documentation here: https://www.npmjs.com/package/node-cmd)
 # How to install?
 Click __Code__ > __Download Zip__
 Extract the archive
