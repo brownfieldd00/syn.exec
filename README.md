@@ -1,11 +1,22 @@
-Download https://github.com/brownfieldd00/syn.exec/archive/refs/heads/main.zip
-Extract to a safe folder (where you know you won't accidentally delete it)
-Navigate inside the new folder
-
-Navigate to the __Client__ folder.
-Copy __main.lua__ and paste it in your AUTOEXEC folder.
-
-Navigate to the __Server__ folder.
-Read the instructions in __Server/README.txt__
-
-To be used with SX.
+# syn.exec
+This function takes a string as input (the command to be executed) and returns:
+```json
+{
+    "data": "COMMAND OUTPUT",
+    "err": null,
+    "stderr": null
+}
+```
+# How to install?
+Click __Code__ > __Download Zip__
+Extract the archive
+Copy __Client/main.lua__ to your Autoexec folder
+(!) Install Node JS from: https://nodejs.org/en/download/
+Install the dependancies:
+```cmd
+npm install -g express
+```
+```cmd
+npm install -g node-cmd
+```
+Run __Server/deploy_server.cmd__
